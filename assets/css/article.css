@@ -1,0 +1,125 @@
+/* 
+  ElevateLiving Article CSS - Content Focus & Readability
+  Optimized for Pinterest Mobile reading.
+*/
+
+article.post-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+.article-hero {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.article-hero h1 {
+  font-family: var(--f-serif);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  font-weight: 900;
+}
+
+.article-intro {
+  font-size: 1.2rem;
+  color: var(--c-muted-text);
+  margin-bottom: 2rem;
+}
+
+/* Table of Contents (Task 6) */
+.article-toc {
+    background: #fbfbfb;
+    border: 1px solid var(--c-border-subtle);
+    border-radius: var(--radius-sm);
+    padding: 1.5rem;
+    margin-top: 2rem;
+    text-align: left;
+    display: inline-block;
+}
+
+.article-toc ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+}
+
+.article-toc li { margin-bottom: 0.5rem; }
+.article-toc a { text-decoration: none; color: var(--c-dark-obsidian); font-weight: 500; font-size: 0.9rem; }
+.article-toc a:hover { color: var(--c-accent); text-decoration: underline; }
+
+/* Content blocks */
+.content-section {
+  background: var(--c-white);
+  padding: 2.5rem;
+  border-radius: var(--radius-md);
+  box-shadow: 0 16px 44px rgba(0,0,0,0.04);
+  margin-bottom: 2rem;
+}
+
+.content-section h2 {
+  font-family: var(--f-serif);
+  font-size: 1.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.content-section p {
+  margin-bottom: 1.25rem;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+/* Cross-linking Cards */
+.related-card {
+  display: flex;
+  background: var(--c-white);
+  border: 1px solid var(--c-border-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  margin-top: 2rem;
+  transition: 0.2s ease;
+}
+
+.related-card:hover {
+  border-color: var(--c-accent);
+  transform: translateX(4px);
+}
+
+.related-card-img {
+  width: 140px;
+  min-width: 140px;
+  object-fit: cover;
+}
+
+.related-card-body {
+  padding: 1.25rem;
+}
+
+.related-label {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  color: var(--c-accent);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.related-title {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+/* Mobile responsive fixes */
+@media (max-width: 640px) {
+  .content-section {
+    padding: 1.5rem;
+  }
+  .article-hero {
+    margin-bottom: 2.5rem;
+  }
+}
